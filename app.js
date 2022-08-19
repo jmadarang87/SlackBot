@@ -1,7 +1,6 @@
 const { App } = require('@slack/bolt');
 require('dotenv').config();
 const getacat = require('./getacat');
-const joke = require('./joke');
 const chuckfact = require('./chuckjoke');
 const getPlot = require('./movie');
 
@@ -59,6 +58,7 @@ app.action('button_click', async ({ body, ack, say }) => {
 	await say(`<@${body.user.id}> clicked the button`);
 });
 
+// returns random cat image with  ' /cat ' slash command
 app.command('/cat', async ({ ack, payload, context }) => {
 	// Acknowledge command request
 	await ack();
@@ -93,72 +93,7 @@ app.command('/cat', async ({ ack, payload, context }) => {
 	// await respond(`${command.text}`);
 });
 
-app.command('/joke', async ({ ack, payload, context }) => {
-	// Acknowledge command request
-	await ack();
-
-	const joke = await joke();
-
-	try {
-		const result = await app.client.chat.postMessage({
-			token: context.botToken,
-			channel: payload.channel_id,
-
-			blocks: [
-				{
-					type: 'header',
-					text: {
-						type: 'plain_text',
-						text: joke,
-						emoji: true,
-					},
-				},
-			],
-			text: 'Knock Knock',
-		});
-	} catch (error) {
-		console.log(error);
-	}
-
-	// await respond(`${command.text}`);
-});
-
-// Listen for a slash command invocation
-app.command('/travel', async ({ ack, payload, context }) => {
-	// Acknowledge the command request
-	ack();
-
-	try {
-		const result = await app.client.chat.postMessage({
-			token: context.botToken,
-			// Pass a valid trigger_id within 3 seconds of receiving it
-			channel: payload.channel_id,
-			// View payload
-
-			blocks: [
-				{
-					type: 'header',
-					text: {
-						type: 'plain_text',
-						text: 'Travel inspiration',
-						emoji: true,
-					},
-				},
-				{
-					type: 'image',
-					image_url:
-						'https://pbs.twimg.com/profile_images/625633822235693056/lNGUneLX_400x400.jpg',
-					alt_text: 'travel inspo',
-				},
-			],
-			text: 'Travel Inspo from App',
-		});
-		console.log(result);
-	} catch (error) {
-		console.error(error);
-	}
-});
-
+// returns random chuck norris fact with ' /chuck ' slash command
 app.command('/chuck', async ({ ack, payload, context }) => {
 	ack();
 
@@ -194,6 +129,7 @@ app.command('/chuck', async ({ ack, payload, context }) => {
 	}
 });
 
+// returns plot for {movietitle} with ' /movie {movietitle} ' slash command
 app.command('/movie', async ({ ack, payload, context }) => {
 	ack();
 	console.log(payload);
