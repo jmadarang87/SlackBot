@@ -11,13 +11,11 @@ SlackBot with slash commands.
 
 ## Features
 
-- Slash Commands
+Slash Commands
 
-/chuck returns random Chuck Norris fact
-
-/movie {moviename} returns plot of movie
-
-/cat random cat image
+- ' /chuck ' returns random Chuck Norris fact
+- ' /movie {moviename} ' returns plot of movie
+- ' /cat ' returns random cat image
 
 ## Challenges
 
@@ -63,21 +61,20 @@ npm install
 
 3. Create .env folder with following variables:
 
-- [Slack API:](https://api.slack.com/)
+[Slack API:](https://api.slack.com/)
 
-AUTH_TOKEN
+- AUTH_TOKEN
+- AUTH_SIGN
+- AUTH_APPTOKEN
 
-AUTH_SIGN
+[Chuck Norris Facts API:](https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random)
 
-AUTH_APPTOKEN
+- RAPIDAPI_KEY
+- RAPIDAPI_HOST
 
-- [Chuck Norris Facts API:](https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random)
+[Movie API:](http://www.omdbapi.com)
 
-RAPIDAPI_KEY RAPIDAPI_HOST
-
-- [Movie API:](http://www.omdbapi.com)
-
-MOVIEAPI
+- MOVIEAPI
 
 4. Start playing:
 
