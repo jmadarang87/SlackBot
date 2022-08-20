@@ -11,8 +11,13 @@ SlackBot with slash commands.
 
 ## Features
 
-- Slash Commands ... - /chuck : returns random Chuck Norris fact ... - /movie
-  {moviename} : returns plot of movie ... - /cat : random cat image
+- Slash Commands
+
+/chuck returns random Chuck Norris fact
+
+/movie {moviename} returns plot of movie
+
+/cat random cat image
 
 ## Challenges
 
@@ -37,35 +42,44 @@ SlackBot with slash commands.
 
 ## Credits
 
-[Slack API Tutorial](https://api.slack.com/tutorials)
-[Chuck Norris Facts API](https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random)
-[Movie API](http://www.omdbapi.com)
-[Cat API](https://api.thecatapi.com/v1/images/search)
+- [Slack API Tutorial](https://api.slack.com/tutorials)
+- [Chuck Norris Facts API](https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random)
+- [Movie API](http://www.omdbapi.com)
+- [Cat API](https://api.thecatapi.com/v1/images/search)
 
 ## SETUP
 
-Clone this repository:
+1. Clone this repository:
 
 ```
 git clone [repo url]
 ```
 
-Install npm packages:
+2. Install npm packages:
 
 ```
 npm install
 ```
 
-Create .env folder with following variables:
+3. Create .env folder with following variables:
 
-[Slack API:](https://api.slack.com/) AUTH_TOKEN AUTH_SIGN AUTH_APPTOKEN
+- [Slack API:](https://api.slack.com/)
 
-[Chuck Norris Facts API:](https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random)
+AUTH_TOKEN
+
+AUTH_SIGN
+
+AUTH_APPTOKEN
+
+- [Chuck Norris Facts API:](https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random)
+
 RAPIDAPI_KEY RAPIDAPI_HOST
 
-[Movie API:](http://www.omdbapi.com) MOVIEAPI
+- [Movie API:](http://www.omdbapi.com)
 
-Start working:
+MOVIEAPI
+
+4. Start playing:
 
 ```
 npm start
