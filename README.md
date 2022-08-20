@@ -37,6 +37,10 @@ Slash Commands
 - Change movie title to proper case
 
 ## Preview
+<img width="562" alt="catimgss" src="https://user-images.githubusercontent.com/22069784/185722685-d82e9eb6-e821-4226-9bdc-dfb42cadf5ef.png">
+<img width="763" alt="catcommand" src="https://user-images.githubusercontent.com/22069784/185722691-802bf13e-432e-43ce-a32a-5ebc87a458e1.png">
+<img width="658" alt="chucknorrisfact" src="https://user-images.githubusercontent.com/22069784/185722694-fda4f3eb-cfce-4555-9bdc-970f29682752.png">
+<img width="608" alt="moviefact" src="https://user-images.githubusercontent.com/22069784/185722695-9b560c6c-e1e4-4b9e-83c8-44f8e9459718.png">
 
 ## Credits
 
