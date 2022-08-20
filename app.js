@@ -1,8 +1,8 @@
 const { App } = require('@slack/bolt');
 require('dotenv').config();
-const getacat = require('./getacat');
-const chuckfact = require('./chuckjoke');
-const getPlot = require('./movie');
+const getacat = require('./src/getacat');
+const chuckfact = require('./src/chuckjoke');
+const getPlot = require('./src/movie');
 
 const app = new App({
 	token: process.env.AUTH_TOKEN,

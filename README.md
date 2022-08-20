@@ -50,7 +50,7 @@ Slash Commands
 1. Clone this repository:
 
 ```
-git clone [repo url]
+git clone https://github.com/jmadarang87/SlackBot.git
 ```
 
 2. Install npm packages:
@@ -59,7 +59,7 @@ git clone [repo url]
 npm install
 ```
 
-3. Create .env folder with following variables:
+3. Create .env folder with following variables from the following APIs:
 
 [Slack API:](https://api.slack.com/)
 
